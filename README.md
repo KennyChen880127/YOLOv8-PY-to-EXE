@@ -62,4 +62,5 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
 )
-```        
+```
+* Next, replace the original `datas=[],` with `datas=[('ultralytics', '.')],` and change `console=False` to `console=True.`
