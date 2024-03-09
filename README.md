@@ -24,4 +24,4 @@ This project aims to demonstrate how to convert YOLOv8 Python files (.py) into e
         pyinstaller main.py --onefile --add-data "ultralytics;."
   
 #### Result
-[result](https://github.com/KennyChen880127/YOLOv8-PY-to-EXE/blob/master/result.jpg)
+![result](https://github.com/KennyChen880127/YOLOv8-PY-to-EXE/blob/master/result.jpg)
