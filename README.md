@@ -23,7 +23,7 @@ This project aims to demonstrate how to convert YOLOv8 Python files (.py) into e
         
         pyinstaller main.py --onefile --noconsole
 
-* Once completed, a `main.spec` file will be added to the directory, containing the following content:
+*  After completion, a `main.spec` file will be added to the directory. Replace the original `datas=[],` with `datas=[('ultralytics', '.')],` and change `console=False` to `console=True`. The modified content will look like this:
 
 ```python
 # -*- mode: python ; coding: utf-8 -*-
@@ -32,7 +32,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('ultralytics', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -55,7 +55,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,
+    console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
@@ -63,7 +63,6 @@ exe = EXE(
     entitlements_file=None,
 )
 ```
-* Next, replace the original `datas=[],` with `datas=[('ultralytics', '.')],` and change `console=False` to `console=True.`
 
 * Packaging with .spec file:
 
