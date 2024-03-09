@@ -22,3 +22,6 @@ This project aims to demonstrate how to convert YOLOv8 Python files (.py) into e
 * After editing the program, open the terminal and navigate to the project directory:
         
         pyinstaller main.py --onefile --add-data "ultralytics;."
+  
+#### Result
+[result](https://github.com/KennyChen880127/YOLOv8-PY-to-EXE/blob/master/result.jpg)
