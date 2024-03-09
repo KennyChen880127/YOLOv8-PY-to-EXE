@@ -64,3 +64,7 @@ exe = EXE(
 )
 ```
 * Next, replace the original `datas=[],` with `datas=[('ultralytics', '.')],` and change `console=False` to `console=True.`
+
+* Packaging with .spec file:
+
+        pyinstaller main.spec
